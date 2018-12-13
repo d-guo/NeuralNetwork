@@ -2,7 +2,6 @@
 #approximate f(x) = 2*relu(-x + 1) - 1
 
 import random
-import math
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from matplotlib import style
@@ -250,8 +249,8 @@ class trainednet:
 		return self.nn.weights[1][0] * self.nn.relu(self.nn.weights[0][0] * x + self.nn.biases[0]) + self.nn.weights[1][1] * self.nn.relu(self.nn.weights[0][1] * x + self.nn.biases[0]) + self.nn.weights[1][2] * self.nn.relu(self.nn.weights[0][2] * x + self.nn.biases[0]) + self.nn.biases[1]
 
 
-tn = trainednet()
-print(tn.f(-2))
+#tn = trainednet()
+#print(tn.f(-2))
 
-#nn = neuralnet()
-#nn.train(10e-5, 0.025, 1000000, 1000)
+nn = neuralnet()
+nn.train(10e-5, 0.025, 1000000, 1000)
