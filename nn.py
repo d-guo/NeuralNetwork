@@ -197,10 +197,7 @@ class neuralnet:
 				plt.plot(xpoints, ypoints)
 				plt.draw()
 				plt.pause(0.0000001)
-
-				print(xpoints)
-				print(ypoints)
-				print(self.averageloss(solutionset))
+				#print(self.averageloss(solutionset))
 
 			#save weights and biases if error is acceptable
 			if(self.averageloss(solutionset) < acceptableerror):
@@ -283,11 +280,11 @@ class trainednet:
 	def f(self, x):
 		return self.nn.weights[1][0] * self.nn.relu(self.nn.weights[0][0] * x + self.nn.biases[0]) + self.nn.weights[1][1] * self.nn.relu(self.nn.weights[0][1] * x + self.nn.biases[0]) + self.nn.weights[1][2] * self.nn.relu(self.nn.weights[0][2] * x + self.nn.biases[0]) + self.nn.weights[1][3] * self.nn.relu(self.nn.weights[0][3] * x + self.nn.biases[0]) + self.nn.weights[1][4] * self.nn.relu(self.nn.weights[0][4] * x + self.nn.biases[0]) + self.nn.biases[1]
 
-x = 0
-tn = trainednet()
-print(tn.f(x))
-print(f(x))
+#x = -50
+#tn = trainednet()
+#print(tn.f(x))
+#print(f(x))
 
 
-#nn = neuralnet()
-#nn.train(10e-5, 0.001, 100000, 1000)
+nn = neuralnet()
+nn.train(10e-5, 0.001, 100000, 1000)
