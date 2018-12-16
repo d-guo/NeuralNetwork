@@ -11,7 +11,7 @@ xpoints = list()
 ypoints = list()
 plt.ion()
 
-def f(x):
+def func(x):
 	return 2 * max(0, -x + 1) - 1
 
 class neuralnet:
@@ -185,7 +185,7 @@ class neuralnet:
 			#generate solutionset for training
 			solutionset = list()
 			for j in range(0, datasetsize):
-				solutionset.append(2 * self.relu(-dataset[j] + 1) - 1)
+				solutionset.append(func(dataset[j]))
 			#training
 			self.train1(dataset, solutionset, learningrate)
 
@@ -283,7 +283,7 @@ class trainednet:
 #x = -50
 #tn = trainednet()
 #print(tn.f(x))
-#print(f(x))
+#print(func(x))
 
 
 nn = neuralnet()
