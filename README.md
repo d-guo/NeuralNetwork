@@ -3,7 +3,7 @@ This is a neural network written in Python from scratch with 1 hidden layer of 3
 
 ## Use
 To see training progress measured by the loss function, enter "python nn.py" in command line. \
-To use the neural network for evaluating inputs, remove the comments in "nn.py". \
+To use the neural network for evaluating inputs, remove the comments in "nn.py". (if it raises OverflowError, try again) \
 The code is not necessarily meant to be run. It's more of a demonstration of the backpropagation used in neural networks.
 
 ## Prerequisites
