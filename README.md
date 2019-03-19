@@ -1,5 +1,5 @@
 # NeuralNetwork
-This is a neural network written in Python from scratch with 1 hidden layer of 3 neurons trained to approximate f(x) = 2 * relu(-x + 1) -1.
+This is a neural network written in Python from scratch with 1 hidden layer of 3 neurons trained to approximate the function f(x) = 2 * relu(-x + 1) -1.
 
 ## Use
 To see training progress measured by the loss function, enter "python nn.py" in command line. \
