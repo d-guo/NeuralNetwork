@@ -1,6 +1,18 @@
 # NeuralNetwork
-This is a neural net written in Python from scratch with 1 hidden layer of 3 neurons trained to approximate f(x) = 2 * relu(-x + 1) -1.
+This is a neural network written in Python from scratch with 1 hidden layer of 3 neurons trained to approximate f(x) = 2 * relu(-x + 1) -1.
 
-This is not necessarily meant to be run. It's more of a proof of concept for myself to learn about the fundamentals of how neural networks work. That is why the only modules being used are to generate random numbers and plot the results of the neural network.
+## Use
+To see training progress measured by the loss function, enter "python nn.py" in command line. \
+To use the neural network for evaluating inputs, remove the comments in "nn.py". \
+The code is not necessarily meant to be run. It's more of a demonstration of the backpropagation used in neural networks.
 
-The report included in this repository discusses these details about the neural network.
+## Prerequisites
+Python \
+matplotlib
+
+## Code Details
+"nn.py" contains all the important code. \
+Details about can be found in the report "Neural Network Report.pdf".
+
+## Results
+Results are talked about in depth in in the report.
